@@ -89,7 +89,7 @@
 </head>
 <body>
     <header>
-        <p id="message">UOB Students by Nationality</p>
+        <h1>UOB Students by Nationality</h1>
         <p>Data retrieved from the Bahrain Open Data Portal.</p>
     </header>
     <div id="container">
@@ -107,11 +107,10 @@
                     const table = document.createElement('table');
                     const thead = document.createElement('thead');
                     const headRow = document.createElement('tr');
-                    const th = document.createElement('th');
                     const headers = ['Year', 'Semester', 'The Programs', 'Nationality','Colleges', 'Number of Students'];
 
                     headers.forEach(header => {
-                        const th = document.createElement('th');
+                        let th = document.createElement('th');
                         th.textContent = header;
                         headRow.appendChild(th);
                     });
